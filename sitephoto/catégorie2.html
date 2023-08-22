@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css"> <!-- Assurez-vous que le chemin vers votre fichier CSS est correct -->
+    <title>Chargement en cours...</title>
+</head>
+<body>
+    <body background="images/fondchargement2.avif"> 
+    <div class="loading-screen">
+        <div class="loading-bar"></div>
+        <h2>Chargement en cours...</h2>
+    </div>
+
+    <script>
+        let loadingBar = document.querySelector(".loading-bar");
+        let width = 0;
+        let interval = setInterval(function() {
+            if (width >= 100) {
+                clearInterval(interval);
+                window.location.href = "page_finale.html"; // Remplacez par la page finale après le chargement
+            } else {
+                width += 1;
+                loadingBar.style.width = width + "%";
+            }
+        }, 100); // 0.1 seconde (100 millisecondes)
+    </script>
+</body>
+</html>

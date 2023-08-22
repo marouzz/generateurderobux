@@ -1,0 +1,82 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    margin: 0;
+}
+
+.pseudo-form {
+    text-align: center;
+    margin: 100px auto;
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #00b7ff;
+    background-color: #4127b398;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgb(0, 0, 0);
+}
+
+.pseudo-form h2 {
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.pseudo-form input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.pseudo-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+body {
+    background-image: url("images/roblox-blue-logo-4k-blue-brickwall-roblox-logo-online-games.jpg"); 
+    background-size: cover;
+}
+
+.pseudo-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-family: 'Impact', 'fantasy';
+    color: #00c3ff;
+    text-transform: uppercase;
+}
+
+.loading-message {
+    text-align: center;
+    display: none;
+    width: 300%;
+}
+
+.loading-icon {
+    font-size: 100px;
+    color: #000000;
+    animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.success-message {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 100px;
+    color: #fbff00da;
+    font-weight: bold;
+    background-color:#0000009f;
+    padding: 5px;
+    border-radius: 5px;
+    opacity: 5; /* Définit l'opacité à 0 pour le fondu */
+    animation: fade-in 3s forwards;
+}

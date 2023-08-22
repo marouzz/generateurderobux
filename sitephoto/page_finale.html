@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylés.css"> <!-- Assurez-vous que le chemin vers votre fichier CSS est correct -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Inclure Font Awesome pour les icônes -->
+    <title>Entrez votre pseudonyme Roblox</title>
+</head>
+<body>
+    <div class="pseudo-form">
+        <h2>Veuillez écrire votre pseudonyme Roblox</h2>
+        <form id="robloxForm">
+            <input type="text" id="pseudo" placeholder="Votre pseudonyme Roblox">
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+
+    <div class="loading-message" id="loadingMessage">
+        <div class="loading-icon"><i class="fas fa-spinner"></i></div>
+        <p>Chargement en cours...</p>
+    </div>
+
+    <div class="success-message" id="successMessage" style="display: none;">
+        Vos Robux ont été envoyés avec succès!!!
+    </div>
+
+    <script>
+        document.getElementById("robloxForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const pseudo = document.getElementById("pseudo").value;
+
+            // Cacher le formulaire et le message initial, afficher l'animation de chargement
+            document.querySelector(".pseudo-form").style.display = "none";
+            document.getElementById("loadingMessage").style.display = "block";
+
+            // Simuler le chargement pendant 2 secondes
+            setTimeout(function() {
+                // Masquer l'animation de chargement et afficher le message de succès
+                document.getElementById("loadingMessage").style.display = "none";
+                document.getElementById("successMessage").style.display = "block";
+            }, 5000); // 2 secondes
+        });
+    </script>
+</body>
+</html>
+
