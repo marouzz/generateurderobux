@@ -104,3 +104,10 @@ nav ul {
     margin-right: 20px; 
     order: 1;
 }
+
+.ads-container {
+    float: left;
+    margin-right: 20px;
+    z-index: 100; /* Valeur de z-index élevée pour afficher les publicités au-dessus */
+    position: relative; /* Assurez-vous que l'élément est positionné */
+}
