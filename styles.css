@@ -99,4 +99,8 @@ nav ul {
     align-items: center; 
 }
 
-
+.ads-container {
+    float: left; 
+    margin-right: 20px; 
+    order: 1;
+}
